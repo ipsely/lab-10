@@ -38,8 +38,6 @@ mp;
    }
   }
 
-//1711106
-//Rimilmandrita Ghosh
 
   //displays the array as it should be, since elements are arranged adhering to the properties of maximum heap
   void display()
