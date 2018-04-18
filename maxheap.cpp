@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 //maxheap class, using array
 
 
@@ -13,8 +12,9 @@ class MaxHeap
   MaxHeap()
   { 
     size=0;
-    }
-//insert function inserts the element at the end,and then reheapifies it upwards
+  }
+
+  //insert function inserts the element at the end,and then reheapifies it upwards
   void insert(int key)
   {
   int i=size++;
@@ -28,16 +28,11 @@ class MaxHeap
     {
        int temp=maxheap[p];
        maxheap[p]=maxheap[i];
-       maxheap[i]=teMaxHeap()
-  { 
-    size=0;
-  }
-mp;
+       maxheap[i]=temp;
     }
     i=p;
    }
   }
-
 
   //displays the array as it should be, since elements are arranged adhering to the properties of maximum heap
   void display()
@@ -48,6 +43,8 @@ mp;
      cout<<"\t"<<maxheap[i];
    }
   }
+
+
  //takes into consideration three cases, size=0, size=1, and size greater than 1
   void remove()   //remove maximum element (i.e., root element)
   {
@@ -104,6 +101,7 @@ mp;
   }
  }
 };
+
 
 int main()
 {
